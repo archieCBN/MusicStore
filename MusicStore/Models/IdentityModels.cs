@@ -29,5 +29,7 @@ namespace MusicStore.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<MusicStore.Models.Track> Tracks { get; set; }
     }
 }
